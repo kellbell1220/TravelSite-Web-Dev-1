@@ -1,0 +1,262 @@
+/* 
+	Kelli Stasiak Schedule
+	Filename: styles.css
+
+	Author: Kelli Stasiak  
+	Date:  03/28/2017 
+	CIS-130
+ */
+
+/* reset styles */
+html {
+      line-height: 1.5em;
+}
+div,footer, header, h1, h2 nav, p {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+/*Main Content*/
+
+body {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif, 'Russo One';
+   background-color: #d3d3d3;
+}
+
+li, ul {
+	list-style-type:none;
+	font-weight:bold;
+}
+
+p {
+	text-align:center;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+
+h2 {
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+	font-size:2.25em;
+}
+
+h3 {
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+	font-size:1.75em;
+}
+h4 {
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+	font-size:1.5em;
+}
+
+
+
+
+/* Header */
+header {
+	float:left;
+	padding:1em;
+	margin:.5em auto;
+	width:100%;
+	font-family: 'Russo One', sans-serif;
+	text-align: left;
+	font-size: 2.5em;
+	background:#ffc0eb;
+	background: url("images/london.jpg");
+	color: #d3d3d3;
+}
+
+
+
+/*Navigation Menu */
+div.navigation-menu-button {
+		display:none;
+		float:right;
+	}
+nav.sitenavigation {
+	margin-top: .5em;
+	padding: 1px;
+	text-align: right;
+	color: black;
+	font-family: 'Russo One', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+nav.sitenavigation li {
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0;
+}
+nav.sitenavigation a:link {
+	text-decoration: none;
+	color: black;
+}
+nav.sitenavigation a:visited {
+	color: white;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+	color: #f6003a;
+}
+
+/*Intro Section*/
+
+div.intro {
+	margin:0 auto;
+	padding:1em;
+	clear: both;
+	width: 100%;
+	text-align:center;
+}
+
+/*column1*/
+
+div.column1 {
+	width: 35%;
+	padding:1.5em;
+	margin:0 auto;
+	float: left;
+	background:#ff2a5c;
+	background: url("images/sky.jpg");
+	background-size: 1250px;
+	background-repeat: no-repeat;
+	overflow:auto;
+	color: #e0e0e0;
+}
+
+img.column1 {
+	padding:1em;
+	margin:3em;
+}
+
+
+/*column2*/
+
+div.column2 {
+	width:35%;
+	padding:1.5em;
+	margin:0 auto;
+	background:#ff2a5c;
+	background: url("images/back.jpg"); 
+	background-size: 1250px;
+	background-repeat: no-repeat;
+	float: right;
+	overflow:auto;
+	color: #d3d3d3;
+
+}
+
+img.column2 {
+	padding:1em;
+	margin:10px;
+	position:absolute; 
+	top: 0.5em; 
+	left:0.5em;
+}
+
+
+/*column3*/
+
+div.column3 {
+	width: 20%;
+	padding: 1.5em;
+	margin:0 auto;
+	text-align: justify;
+	
+}
+
+
+/* Footer Section */
+footer {
+	width: 100%;
+	padding: 1.5em;
+	margin:0 auto;
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+	clear:both;
+	
+}
+
+/*Medium Screen Size*/
+@media screen and (max-width: 1030px) {
+	header{
+		font-size:2em;
+	}
+	
+	div.column1{
+		float:left;
+		width:40%;
+	}
+	div.column2{
+		float:right;
+		width:40%;
+	}
+	
+	div.column3{
+		clear:both;
+		width: 95%;
+		text-align: center;
+	}
+
+	
+}
+/*Small Screen Size*/
+@media screen and (max-width: 800px) {
+	header{
+		float:left;
+		width:85%;
+	}
+	
+	div.navigation-menu-button {
+		display:inline-block;
+		float:right;
+	}
+	div.sitenavigation {
+		width:18%;
+		padding:5% 1%;
+		float: right;
+		position:relative;
+	}
+	nav.sitenavigation ul {
+		border: 3px solid #f6003a;
+		display:none;
+		background-color: #ff2a5c;
+		position: absolute;
+		right: 1%;
+		top: 8%;
+		z-index: 2;
+	}
+	nav.sitenavigation li {
+		display:block;
+	}
+	nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+	color: white;
+}
+	div.column1{
+		float:none;
+		width:95%;
+		clear:both;
+		background-color: #ff2a5c;
+	}
+	div.column2{
+		float:none;
+		width:95%;
+		clear:both;
+		background-color: #ff2a5c;
+	}
+	
+	header{
+		font-size:1em;
+	}
+	
+
+	
+}
+
+
+
+
+
